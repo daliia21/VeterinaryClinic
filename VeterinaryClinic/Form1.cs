@@ -37,10 +37,10 @@ namespace VeterinaryClinic
                 ofd.Filter = "XML Files|*.xml";
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
-                    var serializer = new XmlSerializer(typeof(VeterinaryClinic));
+                    var serializer = new XmlSerializer(typeof(VeterinaryClinics));
                     using (var fs = File.OpenRead(ofd.FileName))
                     {
-                        var clinic = (VeterinaryClinic)serializer.Deserialize(fs);
+                        var clinic = (VeterinaryClinics)serializer.Deserialize(fs);
                         _departments = clinic.Departments;
                         UpdateTreeView();
                         UpdateDataGrid(_departments);
@@ -57,7 +57,7 @@ namespace VeterinaryClinic
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     var json = File.ReadAllText(ofd.FileName);
-                    var clinic = JsonConvert.DeserializeObject<VeterinaryClinic>(json);
+                    var clinic = JsonConvert.DeserializeObject<VeterinaryClinics>(json);
                     _departments = clinic.Departments;
                     UpdateTreeView();
                     UpdateDataGrid(_departments);

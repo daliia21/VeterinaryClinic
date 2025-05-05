@@ -8,7 +8,8 @@ using VeterinaryClinic.AbstractModels;
 
 namespace VeterinaryClinic.Models
 {
-    public class VeterinaryClinic
+    [XmlRoot("VeterinaryClinic")]
+    public class VeterinaryClinics
     {
 
         public List<ClinicDepartment> Departments { get; set; }
