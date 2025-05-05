@@ -1,0 +1,97 @@
+
+{
+  "VeterinaryClinic": {
+    "Departments": [
+      {
+        "ClinicDepartment": {
+          "Id": 1,
+          "DepartmentName": "Отделение для наземных животных",
+          "SpecializationDepartment": "Наземное",
+          "Veterinarians": [
+            {
+              "Id": 1,
+              "Name": "Айболит",
+              "Specialization": "Наземное",
+              "Contact": {
+                "Phone": "89083436766",
+                "Email": "Aibolit@vetclinic.ru"
+              },
+              "ClinicDepartmentId": 1
+            },
+            {
+              "Id": 2,
+              "Name": "Далия",
+              "Specialization": "Наземное",
+              "Contact": {
+                "Phone": "89083436767",
+                "Email": "Dalia@vetclinic.ru"
+              },
+              "ClinicDepartmentId": 1
+            }
+          ],
+          "Pets": [
+            {
+              "Id": 1,
+              "Name": "Зефирка",
+              "TypeOfPet": "Наземное",
+              "VeterinarianId": 1,
+              "ClinicDepartmentId": 1
+            },
+            {
+              "Id": 2,
+              "Name": "Беляш",
+              "TypeOfPet": "Наземное",
+              "VeterinarianId": 2,
+              "ClinicDepartmentId": 1
+            }
+          ]
+        }
+      },
+      {
+        "ClinicDepartment": {
+          "Id": 2,
+          "DepartmentName": "Отделение для водных животных",
+          "SpecializationDepartment": "Водное",
+          "Veterinarians": [
+            {
+              "Id": 3,
+              "Name": "Доктор Плюшева",
+              "Specialization": "Водное",
+              "Contact": {
+                "Phone": "89083436756",
+                "Email": "Plusheva@vetclinic.ru"
+              },
+              "ClinicDepartmentId": 2
+            },
+            {
+              "Id": 4,
+              "Name": "Доктор Робинс",
+              "Specialization": "Водное",
+              "Contact": {
+                "Phone": "89033736767",
+                "Email": "Robins@vetclinic.ru"
+              },
+              "ClinicDepartmentId": 2
+            }
+          ],
+          "Pets": [
+            {
+              "Id": 3,
+              "Name": "Пират",
+              "TypeOfPet": "Водное",
+              "VeterinarianId": 3,
+              "ClinicDepartmentId": 2
+            },
+            {
+              "Id": 4,
+              "Name": "Шторм",
+              "TypeOfPet": "Водное",
+              "VeterinarianId": 4,
+              "ClinicDepartmentId": 2
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
