@@ -1,81 +1,74 @@
-
 {
-  "VeterinaryClinic": {
-    "Departments": [
-      {
-        "ClinicDepartment": {
+  "Departments": [
+    {
+      "Id": 1,
+      "DepartmentName": "Отделение для наземных животных",
+      "SpecializationDepartment": "landAnimal",
+      "Veterinarians": [
+        {
           "Id": 1,
-          "DepartmentName": "Отделение для наземных животных",
-          "SpecializationDepartment": "landAnimal",
-          "Veterinarians": [
-            {
-              "Id": 1,
-              "Name": "Айболит",
-              "Specialization": "landAnimal",
-              "ClinicDepartmentId": 1
-            },
-            {
-              "Id": 2,
-              "Name": "Далия",
-              "Specialization": "landAnimal",
-              "ClinicDepartmentId": 1
-            }
-          ],
-          "Pets": [
-            {
-              "Id": 1,
-              "Name": "Зефирка",
-              "TypeOfPet": "landAnimal",
-              "VeterinarianId": 1,
-              "ClinicDepartmentId": 1
-            },
-            {
-              "Id": 2,
-              "Name": "Беляш",
-              "TypeOfPet": "landAnimal",
-              "VeterinarianId": 2,
-              "ClinicDepartmentId": 1
-            }
-          ]
-        }
-      },
-      {
-        "ClinicDepartment": {
+          "Name": "Айболит",
+          "Specialization": "landAnimal",
+          "ClinicDepartmentId": 1
+        },
+        {
           "Id": 2,
-          "DepartmentName": "Отделение для водных животных",
-          "SpecializationDepartment": "aquaticAnimal",
-          "Veterinarians": [
-            {
-              "Id": 3,
-              "Name": "Доктор Плюшева",
-              "Specialization": "aquaticAnimal",
-              "ClinicDepartmentId": 2
-            },
-            {
-              "Id": 4,
-              "Name": "Доктор Робинс",
-              "Specialization": "aquaticAnimal",
-              "ClinicDepartmentId": 2
-            }
-          ],
-          "Pets": [
-            {
-              "Id": 3,
-              "Name": "Пират",
-              "TypeOfPet": "aquaticAnimal",
-              "VeterinarianId": 3,
-              "ClinicDepartmentId": 2
-            },
-            {
-              "Id": 4,
-              "Name": "Шторм",
-              "TypeOfPet": "aquaticAnimal",
-              "VeterinarianId": 4,
-              "ClinicDepartmentId": 2
-            }
-          ]
+          "Name": "Далия",
+          "Specialization": "landAnimal",
+          "ClinicDepartmentId": 1
         }
-      }
-    ]
-  }
+      ],
+      "Pets": [
+        {
+          "Id": 1,
+          "Name": "Зефирка",
+          "TypeOfPet": "landAnimal",
+          "VeterinarianId": 1,
+          "ClinicDepartmentId": 1
+        },
+        {
+          "Id": 2,
+          "Name": "Беляш",
+          "TypeOfPet": "landAnimal",
+          "VeterinarianId": 2,
+          "ClinicDepartmentId": 1
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "DepartmentName": "Отделение для водных животных",
+      "SpecializationDepartment": "aquaticAnimal",
+      "Veterinarians": [
+        {
+          "Id": 3,
+          "Name": "Доктор Плюшева",
+          "Specialization": "aquaticAnimal",
+          "ClinicDepartmentId": 2
+        },
+        {
+          "Id": 4,
+          "Name": "Доктор Робинс",
+          "Specialization": "aquaticAnimal",
+          "ClinicDepartmentId": 2
+        }
+      ],
+      "Pets": [
+        {
+          "Id": 3,
+          "Name": "Пират",
+          "TypeOfPet": "aquaticAnimal",
+          "VeterinarianId": 3,
+          "ClinicDepartmentId": 2
+        },
+        {
+          "Id": 4,
+          "Name": "Шторм",
+          "TypeOfPet": "aquaticAnimal",
+          "VeterinarianId": 4,
+          "ClinicDepartmentId": 2
+        }
+      ]
+    }
+  ]
 }

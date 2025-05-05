@@ -3,10 +3,12 @@ using System.Windows.Forms;
 using System.Xml.Serialization;
 using VeterinaryClinic.AbstractModels;
 using VeterinaryClinic.DataBase;
+using VeterinaryClinic.Models;
+
 
 namespace VeterinaryClinic
 {
-   
+
 
     public partial class Form1 : Form
     {
@@ -118,30 +120,20 @@ namespace VeterinaryClinic
             detailsForm.ShowDetails(e.Node.Tag);
             detailsForm.Show();
         }
-    }
 
-    [XmlRoot("VeterinaryClinic")]
-    public class VeterinaryClinic
-    {
-        [XmlArray("Departments")]
-        [XmlArrayItem("ClinicDepartment")]
-        public List<ClinicDepartment> Departments { get; set; }
 
-        private void button1_Click(object sender, EventArgs e)
-    {
-           
-    }
 
-    private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
-    {
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
 
     }
-
-    private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
-    {
-
-    }
-    }
-    
 }
 
