@@ -8,7 +8,7 @@ namespace VeterinaryClinic.Enums
 {
     public enum TypeOfPet
     {
-        Наземное,
-        Водное
+        landAnimal,
+        aquaticAnimal
     }
 }

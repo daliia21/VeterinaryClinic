@@ -4,26 +4,18 @@
 		<ClinicDepartment>
 			<Id>1</Id>
 			<DepartmentName>Отделение для наземных животных</DepartmentName>
-			<SpecializationDepartment>Наземное</SpecializationDepartment>
+			<SpecializationDepartment>landAnimal</SpecializationDepartment>
 			<Veterinarians>
 				<Veterinarian>
 					<Id>1</Id>
 					<Name>Айболит</Name>
-					<Specialization>Наземное</Specialization>
-					<Contact>
-						<Phone>89083436766</Phone>
-						<Email>Aibolit@vetclinic.ru</Email>
-					</Contact>
+					<Specialization>landAnimal</Specialization>
 					<ClinicDepartmentId>1</ClinicDepartmentId>
 				</Veterinarian>
 				<Veterinarian>
 					<Id>2</Id>
 					<Name>Далия</Name>
-					<Specialization>Наземное</Specialization>
-					<Contact>
-						<Phone>89083436767</Phone>
-						<Email>Dalia@vetclinic.ru</Email>
-					</Contact>
+					<Specialization>landAnimal</Specialization>
 					<ClinicDepartmentId>1</ClinicDepartmentId>
 				</Veterinarian>
 			</Veterinarians>
@@ -31,14 +23,14 @@
 				<Pet>
 					<Id>1</Id>
 					<Name>Зефирка</Name>
-					<TypeOfPet>Наземное</TypeOfPet>
+					<TypeOfPet>landAnimal</TypeOfPet>
 					<VeterinarianId>1</VeterinarianId>
 					<ClinicDepartmentId>1</ClinicDepartmentId>
 				</Pet>
 				<Pet>
 					<Id>2</Id>
 					<Name>Беляш</Name>
-					<TypeOfPet>Наземное</TypeOfPet>
+					<TypeOfPet>landAnimal</TypeOfPet>
 					<VeterinarianId>2</VeterinarianId>
 					<ClinicDepartmentId>1</ClinicDepartmentId>
 				</Pet>
@@ -48,26 +40,18 @@
 		<ClinicDepartment>
 			<Id>2</Id>
 			<DepartmentName>Отделение для водных животных</DepartmentName>
-			<SpecializationDepartment>Водное</SpecializationDepartment>
+			<SpecializationDepartment>aquaticAnimal</SpecializationDepartment>
 			<Veterinarians>
 				<Veterinarian>
 					<Id>3</Id>
 					<Name>Доктор Плюшева</Name>
-					<Specialization>Водное</Specialization>
-					<Contact>
-						<Phone>89083436756</Phone>
-						<Email>Plusheva@vetclinic.ru</Email>
-					</Contact>
+					<Specialization>aquaticAnimal</Specialization>
 					<ClinicDepartmentId>2</ClinicDepartmentId>
 				</Veterinarian>
 				<Veterinarian>
 					<Id>4</Id>
 					<Name>Доктор Робинс</Name>
-					<Specialization>Водное</Specialization>
-					<Contact>
-						<Phone>89033736767</Phone>
-						<Email>Robins@vetclinic.ru</Email>
-					</Contact>
+					<Specialization>aquaticAnimal</Specialization>
 					<ClinicDepartmentId>2</ClinicDepartmentId>
 				</Veterinarian>
 			</Veterinarians>
@@ -75,14 +59,14 @@
 				<Pet>
 					<Id>3</Id>
 					<Name>Пират</Name>
-					<TypeOfPet>Водное</TypeOfPet>
+					<TypeOfPet>aquaticAnimal</TypeOfPet>
 					<VeterinarianId>3</VeterinarianId>
 					<ClinicDepartmentId>2</ClinicDepartmentId>
 				</Pet>
 				<Pet>
 					<Id>4</Id>
 					<Name>Шторм</Name>
-					<TypeOfPet>Водное</TypeOfPet>
+					<TypeOfPet>aquaticAnimal</TypeOfPet>
 					<VeterinarianId>4</VeterinarianId>
 					<ClinicDepartmentId>2</ClinicDepartmentId>
 				</Pet>

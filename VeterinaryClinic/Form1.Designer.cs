@@ -48,7 +48,6 @@
             treeView1.Name = "treeView1";
             treeView1.Size = new Size(518, 671);
             treeView1.TabIndex = 0;
-            treeView1.AfterSelect += treeView1_AfterSelect;
             // 
             // dataGridView1
             // 
@@ -69,7 +68,6 @@
             button1.TabIndex = 2;
             button1.Text = "Импорт из XML";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -103,7 +101,6 @@
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.Controls.Add(dataGridView1);
-            splitContainer1.Panel2.Paint += splitContainer1_Panel2_Paint;
             splitContainer1.Size = new Size(1654, 709);
             splitContainer1.SplitterDistance = 551;
             splitContainer1.TabIndex = 5;

@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VeterinaryClinic.AbstractModels;
-using VeterinaryClinic.Models;
 
 namespace VeterinaryClinic.DataBase
 {
@@ -14,7 +13,6 @@ namespace VeterinaryClinic.DataBase
         public DbSet<ClinicDepartment> Departments { get; set; }
         public DbSet<Veterinarian> Veterinarians { get; set; }
         public DbSet<Pet> Pets { get; set; }
-        public DbSet<VeterinarianContactInfo> veterinarianContactInfos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
