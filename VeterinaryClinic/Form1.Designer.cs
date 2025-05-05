@@ -33,15 +33,20 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            splitContainer1 = new SplitContainer();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
+            splitContainer1.SuspendLayout();
             SuspendLayout();
             // 
             // treeView1
             // 
             treeView1.BackColor = Color.MistyRose;
-            treeView1.Location = new Point(78, 105);
+            treeView1.Location = new Point(17, 19);
             treeView1.Name = "treeView1";
-            treeView1.Size = new Size(366, 669);
+            treeView1.Size = new Size(518, 671);
             treeView1.TabIndex = 0;
             treeView1.AfterSelect += treeView1_AfterSelect;
             // 
@@ -49,10 +54,10 @@
             // 
             dataGridView1.BackgroundColor = Color.MistyRose;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(627, 105);
+            dataGridView1.Location = new Point(12, 19);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 82;
-            dataGridView1.Size = new Size(1039, 669);
+            dataGridView1.Size = new Size(1057, 671);
             dataGridView1.TabIndex = 1;
             // 
             // button1
@@ -86,20 +91,40 @@
             button3.Text = "Сохранить в бд";
             button3.UseVisualStyleBackColor = false;
             // 
+            // splitContainer1
+            // 
+            splitContainer1.Location = new Point(37, 57);
+            splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            splitContainer1.Panel1.Controls.Add(treeView1);
+            // 
+            // splitContainer1.Panel2
+            // 
+            splitContainer1.Panel2.Controls.Add(dataGridView1);
+            splitContainer1.Panel2.Paint += splitContainer1_Panel2_Paint;
+            splitContainer1.Size = new Size(1654, 709);
+            splitContainer1.SplitterDistance = 551;
+            splitContainer1.TabIndex = 5;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1720, 1121);
+            Controls.Add(splitContainer1);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(dataGridView1);
-            Controls.Add(treeView1);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -110,5 +135,6 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private SplitContainer splitContainer1;
     }
 }
